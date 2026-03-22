@@ -4,5 +4,5 @@
   // keep the exact query string from Intuit (?code=...&realmId=...)
   const qs = location.search || (location.hash ? '?' + location.hash.slice(1) : '');
   // forward to your local Flask callback
-  location.replace('http://127.0.0.1:8080/callback' + qs);
+  location.replace('http://127.0.0.1:8080/oauth/qbo/callback' + qs);
 </script>
